@@ -36,10 +36,10 @@ interval = setInterval(function () {
     }
 
     const displayHours = String(
-        Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+        Math.floor(((difference + 1000) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
       ).padStart(2, "0");
       const displayMinutes = String(
-        Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+        Math.floor(((difference + 1000) % (1000 * 60 * 60)) / (1000 * 60))
       ).padStart(2, "0");
       const displaySeconds = String(
         Math.floor(((difference + 1000) % (1000 * 60)) / 1000)
