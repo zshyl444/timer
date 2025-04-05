@@ -158,10 +158,6 @@
 
 @media (max-width: 480px){
 
-    body{
-        background-color: blueviolet;
-    }
-
     .inputs{
         width: 150%;
         display: flex;
