@@ -1,0 +1,169 @@
+.title{
+    font-style: italic;
+    
+}
+
+
+.timer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.timer{
+    width: 80%;
+    display: flex;
+    background-color: #756a8b;
+    border-radius: 50px;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0;
+
+}
+
+
+.inputs{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.hour-container, .minute-container, .second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#hour, #minute, #second{
+    width: 60%;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.showTime{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.shower{
+    background-color: white;
+    border-radius: 10%;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hours, #minutes, #seconds {
+    font-size: 4em;
+}
+
+.progress {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    overflow: hidden; /* Important: keeps the inner bar clipped inside */
+    position: relative;
+  }
+  
+
+.moving-bar {
+    width: 0%;
+    background-color: #a38eca;
+    height: 100%;
+    border-radius: 50px 0 0 50px; /* round only the left side initially */
+    transition: width 0.2s ease-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+
+.buttons{
+    display: flex;
+    align-self: center;
+    gap: 80px;
+}
+
+.submit{
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    border-radius: 50px;
+    margin-top: 50px;
+    padding: 10px;
+    border-color: black;
+}
+
+
+
+
+@media(max-width: 700px) {
+
+
+
+
+    .inputs{
+        width: 130%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        gap: 5px;
+    }
+
+    .showTime{
+        width: 130%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        gap: 10px;
+    
+    }
+    
+    .shower{
+        height: 125px;
+        width: 30%;
+    }
+
+    .progress{
+        width: 130%;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    
+
+    
+}
+
+@media (max-width: 480px){
+    .inputs{
+        width: 150%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="timer.css" />
+  </head>
+  <body>
+    <section class="timer-section">
+      <h1 class="title">TIME FOR A BREAK</h1>
+
+      <div class="timer">
+        <div class="inputs">
+          <div class="hour-container">
+            <label for="hour">Hours</label>
+            <br />
+            <input type="text" id="hour" />
+          </div>
+
+          <div class="minute-container">
+            <label for="minute">Minutes</label>
+            <br />
+            <input type="text" id="minute" />
+          </div>
+
+          <div class="second-container">
+            <label for="second">Seconds</label>
+            <br/>
+            <input type="text" id="second" />
+          </div>
+        </div>
+
+        <div class="showTime">
+            <div class="shower">
+            <span id="hours">00</span>
+        </div>
+
+        <div class="shower">
+            <span id="minutes">00</span>
+        </div>
+
+        <div class="shower">
+            <span id="seconds">00</span>
+        </div>
+
+        </div>
+
+        <div class="progress">
+            <div class="moving-bar" id="myBar"></div>
+        </div>
+
+        <div class="buttons">
+        <div class="button">
+            <button value="start" class="submit" onclick="startTimer()">Start</button>
+        </div>
+        <div class="button">
+            <button value="start" class="submit" onclick="endTimer()">Stop</button>
+        </div>
+    </div>
+
+      </div>
+    </section>
+
+    <script src="timer.js"></script>
+
+  </body>
+</html>
