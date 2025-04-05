@@ -123,12 +123,60 @@
 @media(max-width: 700px) {
 
 
+    .inputs{
+        width: 130%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        gap: 5px;
+    }
+
+    .showTime{
+        width: 130%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        gap: 10px;
+    
+    }
+    
+    .shower{
+        height: 125px;
+        width: 30%;
+    }
+
+    .progress{
+        width: 130%;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    
+
+    
+}
+
+@media (max-width: 480px){
+    .inputs{
+        width: 150%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        gap: 5px;
+    }
+}
+
+
+
+@media(max-width: 400px) {
+
+
     body{
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: blue;
     }
-
 
     .inputs{
         width: 130%;
