@@ -164,6 +164,12 @@
 
 @media (max-width: 480px){
 
+    body{
+        margin-top: 20px;
+        scale: 1.1;
+        overflow: hidden;
+    }
+
     .inputs{
         width: 150%;
         display: flex;
