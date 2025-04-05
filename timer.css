@@ -171,6 +171,11 @@
         align-self: center;
         gap: 5px;
     }
+
+    #hours, #minutes, #seconds {
+        font-size: 3em;
+    }
+   
 }
 
 
